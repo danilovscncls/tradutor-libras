@@ -53,7 +53,7 @@ cd [Nome da Pasta do Projeto]
 Instalação de Dependências:
 
 pip install -r requirements.txt 
-# (Ou apenas 'pip install flask' se não houver requirements.txt)
+(Ou apenas 'pip install flask' se não houver requirements.txt)
 
 
 Inicialização do Servidor (Ponto de Entrada: main.py):
