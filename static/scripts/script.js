@@ -34,7 +34,7 @@ function speak(text) {
 }
 
 // Checagens rápidas ao clicar no botão
-document.getElementById('runCheck').addEventListener('click', async () => {
+    document.getElementById('runCheck').addEventListener('click', async () => {
     logEl.textContent = "";
     setStatus("Executando checagens...");
     if (!window.isSecureContext && location.hostname !== "localhost") {
