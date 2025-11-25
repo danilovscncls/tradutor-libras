@@ -1,0 +1,232 @@
+:root {
+    --bg: #f0f2f5;
+    --text: #1f2937;
+    --card: #ffffff;
+    --accent: #2563eb;
+    --accent-hover: #1e4fc7;
+    --shadow: rgba(0, 0, 0, 0.12);
+    --muted: #6b7280;
+
+    --radius: 14px;
+    --transition: 0.25s ease;
+}
+
+/*   RESET BÁSICO                 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+
+/*   TOPO / MENU SUPERIOR          */
+
+
+.topbar {
+    width: 100%;
+    background: var(--card);
+    padding: 16px 28px;
+    box-shadow: 0 2px 10px var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.topnav {
+    display: flex;
+    gap: 14px;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.topnav a:hover {
+    background: var(--accent);
+    color: white;
+}
+
+.topnav a.active {
+    background: var(--accent);
+    color: white;
+}
+
+
+/*   CONTAINER PRINCIPAL           */
+
+
+.container {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.container.small {
+    max-width: 720px;
+}
+
+
+/*   HERO (SEÇÃO INICIAL)          */
+
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: var(--muted);
+}
+
+/*   CARDS DO MENU PRINCIPAL       */
+
+.menu-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: var(--card);
+    padding: 22px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--text);
+    display: block;
+    box-shadow: 0 4px 16px var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.card-icon {
+    font-size: 32px;
+}
+
+.card h3 {
+    margin: 10px 0 6px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+
+/*   PÁGINA DE TRADUÇÃO            */
+
+.translator {
+    background: var(--card);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 20px var(--shadow);
+}
+
+.video-area {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 14px 0;
+}
+
+video#webcam {
+    width: 640px;
+    max-width: 100%;
+    border-radius: 10px;
+    background: black;
+}
+
+.controls {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+button:hover {
+    background: var(--accent-hover);
+}
+
+button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.result {
+    margin-top: 16px;
+    background: #f8fafc;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.note {
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/*   RESPONSIVIDADE                */
+
+@media (max-width: 680px) {
+    .topnav {
+        display: none;
+    }
+
+    .hero {
+        padding: 18px;
+    }
+
+    .card {
+        text-align: center;
+    }
+}
+
+#dov {
+    text-align: center;   
+    margin-top: 20px;
+}
+
+#dov img {
+    width: 500px;        
+    max-width: 100%;     
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Traduzir - Tradutor de Libras</title>
+<link rel="stylesheet" href="static/css/stylesFred.css">
+
+</head>
+<body>
+<header class="topbar">
+<div class="brand"> Tradutor de Libras</div>
+<nav class="topnav">
+<a href="index.html">Menu</a>
+<a href="traduzir.html" class="active">Traduzir</a>
+<a href="configuracoes.html">Configurações</a>
+<a href="ajuda.html">Ajuda</a>
+<a href="sobre.html">Sobre</a>
+</nav>
+</header>
+
+
+<main class="container">
+<section class="translator">
+<h2>Captura de Vídeo</h2>
+
+
+<div class="video-area">
+<video id="webcam" autoplay playsinline></video>
+<canvas id="captureCanvas" style="display:none;"></canvas>
+</div>
+
+
+<div class="controls">
+<button id="startBtn">Iniciar Câmera</button>
+</div>
+
+
+<div id="result" class="result">
+<h3>Tradução</h3>
+<div id="translatedText">(a tradução aparecerá aqui)</div>
+</div>
+
+</main>
+
+
+<script src="app.js"></script>
+</body>
+</html>
