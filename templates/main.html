@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <title>Tradutor Libras</title>
   <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
   <h2>Tradutor Simplificado de Libras</h2>
   <div id="status">Status: inicializando...</div>
@@ -15,10 +17,11 @@
 
   <button id="runCheck">Executar Checagens de Diagnóstico</button>
   <pre id="log"></pre>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
   <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
 </body>
+
 </html>
