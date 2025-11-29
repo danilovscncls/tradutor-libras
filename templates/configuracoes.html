@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Configurações - Tradutor de Libras</title>
+    <link rel="stylesheet" href="static/css/stylesFred.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand">Tradutor de Libras</div>
+        <nav class="topnav">
+            <a href="/">Menu</a>
+            <a href="/traduzir">Traduzir</a>
+            <a href="/configuracoes" class="active">Configurações</a>
+            <a href="/ajuda">Ajuda</a>
+            <a href="/sobre">Sobre</a>
+        </nav>
+    </header>
+
+
+    <main class="container small">
+        <h2>Configurações</h2>
+
+
+        <form id="settingsForm">
+            <label>Resolução da Câmera</label>
+            <select id="resolutionSelect">
+                <option value="640x480">640 x 480</option>
+                <option value="1280x720">1280 x 720</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="autoSend" /> Enviar automaticamente após captura
+            </label>
+
+
+            <button type="submit">Salvar</button>
+        </form>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
