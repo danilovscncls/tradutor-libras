@@ -49,7 +49,7 @@ document.getElementById('runCheck').addEventListener('click', async () => {
     log("getUserMedia disponível.");
     }
     try {
-    const wasmUrl = 'https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.wasm';
+    const wasmUrl = 'https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js';
     const r = await fetch(wasmUrl);
     if (r.ok) {
         log("Fetch wasm OK (status " + r.status + ").");
