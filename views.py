@@ -10,9 +10,9 @@ def configuracoes():
 @app.route('/ajuda.html')
 def ajuda():
     return render_template("ajuda.html")
-@app.route('/index.html')
+@app.route('/main.html')
 def index():
-    return render_template("index.html")
+    return render_template("main.html")
 @app.route('/sobre.html')
 def sobre():
     return render_template("sobre.html")
