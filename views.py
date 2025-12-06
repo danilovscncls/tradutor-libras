@@ -19,7 +19,7 @@ hands = mp.solutions.hands.Hands(
 
 # Classes
 classes = [
-    'A','B','C','D','E','F','G','H','I','J','L','M','N'
+    'A','B','C','D','E','F','G','H','I','J','L','M','N','O','P','Q','R','S','T','U','V','X','Y'
 ]   
 
 @app.post("/predict")
