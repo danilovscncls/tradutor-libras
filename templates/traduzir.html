@@ -5,18 +5,18 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Traduzir - Tradutor de Libras</title>
-<link rel="stylesheet" href="../static/css/stylesFred.css">
+<link rel="stylesheet" href="static/css/stylesfred.css">
 
 </head>
 <body>
 <header class="topbar">
 <div class="brand"> Tradutor de Libras</div>
 <nav class="topnav">
-<a href="index.html">Menu</a>
-<a href="traduzir.html" class="active">Traduzir</a>
-<a href="configuracoes.html">Configurações</a>
-<a href="ajuda.html">Ajuda</a>
-<a href="sobre.html">Sobre</a>
+<a href="/">Menu</a>
+<a href="traduzir" class="active">Traduzir</a>
+<a href="configuracoes">Configurações</a>
+<a href="ajuda">Ajuda</a>
+<a href="sobre">Sobre</a>
 </nav>
 </header>
 
@@ -25,15 +25,15 @@
 <section class="translator">
 <h2>Captura de Vídeo</h2>
 
-
 <div class="video-area">
-<video id="webcam" autoplay playsinline></video>
-<canvas id="captureCanvas" style="display:none;"></canvas>
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="captureCanvas" style="display:none;"></canvas>
 </div>
 
 
 <div class="controls">
-<button id="startBtn">Iniciar Câmera</button>
+    <button id="startBtn">Iniciar Câmera</button>
+    <button id="stopBtn">Parar Câmera</button>
 </div>
 
 
@@ -45,6 +45,7 @@
 </main>
 
 
-<script src="app.js"></script>
+<script src="{{ url_for('static', filename='scripts/APP.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/tradutor.js') }}"></script>
 </body>
 </html>
