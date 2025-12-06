@@ -10,7 +10,8 @@
 <header class="topbar">
 <div class="brand">Tradutor de Libras</div>
 <nav class="topnav">
-<a href="index.html">Menu</a>
+
+<a href="/">Menu</a>
 <a href="configuracoes.html" class="active">Configurações</a>
 <a href="ajuda.html">Ajuda</a>
 <a href="sobre.html">Sobre</a>
@@ -32,7 +33,7 @@
     <input type="range" id="fonte" min="14" max="26" value="16">
 </div>
 </main>
-
-<script src="app.js"></script>
+<script src="{{ url_for('static', filename='scripts/app.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/tradutor.js') }}"></script>
 </body>
 </html>

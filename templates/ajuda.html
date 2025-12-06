@@ -10,8 +10,8 @@
 <header class="topbar">
 <div class="brand"> Tradutor de Libras</div>
 <nav class="topnav">
-<a href="index.html">Menu</a>
 
+<a href="/">Menu</a>
 <a href="configuracoes.html">Configurações</a>
 <a href="ajuda.html" class="active">Ajuda</a>
 <a href="sobre.html">Sobre</a>
@@ -39,7 +39,7 @@
 
 </div>
 
-
-<script src="app.js"></script>
+<script src="{{ url_for('static', filename='scripts/app.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/tradutor.js') }}"></script>
 </body>
 </html>
